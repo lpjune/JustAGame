@@ -1,0 +1,98 @@
+@import "compass/css3";
+
+// GLITCHY STUFF BEGINS
+
+body{
+  background:black;
+  font-family: 'Varela', sans-serif;
+}
+
+.glitch{
+  color:white;
+  font-size: 50px;
+  width: 400px;
+  position:relative;
+  margin: 200px auto;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  width: 400px;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background: black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:attr(data-text);
+  width: 400px;
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:white;
+  background: black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+.glitch-header {
+  position: relative;
+}
+// GLITCHY STUFF ENDS
+
+
+
+
+.valor-body {
+    text-align: center;
+}
+.main-valor-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 120px;
+}
+
+.valor-body .valor-header .valor-header-title {
+    color: #957DAD;
+    font-size: 3rem;
+}
+.home-start-button a{
+    color: rgb(146, 163, 194);
+    font-size: 3rem;
+}
+
+.blink-me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

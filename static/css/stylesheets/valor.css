@@ -1,0 +1,295 @@
+/* line 5, ../sass/valor.scss */
+body {
+  background: black;
+  font-family: 'Varela', sans-serif;
+}
+
+/* line 10, ../sass/valor.scss */
+.glitch {
+  color: white;
+  font-size: 50px;
+  width: 400px;
+  position: relative;
+  margin: 200px auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(85px, 9999px, 98px, 0);
+  }
+  5% {
+    clip: rect(35px, 9999px, 42px, 0);
+  }
+  10% {
+    clip: rect(41px, 9999px, 77px, 0);
+  }
+  15% {
+    clip: rect(96px, 9999px, 52px, 0);
+  }
+  20% {
+    clip: rect(7px, 9999px, 24px, 0);
+  }
+  25% {
+    clip: rect(73px, 9999px, 35px, 0);
+  }
+  30% {
+    clip: rect(43px, 9999px, 20px, 0);
+  }
+  35% {
+    clip: rect(41px, 9999px, 48px, 0);
+  }
+  40% {
+    clip: rect(27px, 9999px, 49px, 0);
+  }
+  45% {
+    clip: rect(62px, 9999px, 67px, 0);
+  }
+  50% {
+    clip: rect(83px, 9999px, 22px, 0);
+  }
+  55% {
+    clip: rect(85px, 9999px, 88px, 0);
+  }
+  60% {
+    clip: rect(79px, 9999px, 91px, 0);
+  }
+  65% {
+    clip: rect(42px, 9999px, 51px, 0);
+  }
+  70% {
+    clip: rect(83px, 9999px, 64px, 0);
+  }
+  75% {
+    clip: rect(20px, 9999px, 12px, 0);
+  }
+  80% {
+    clip: rect(6px, 9999px, 10px, 0);
+  }
+  85% {
+    clip: rect(17px, 9999px, 65px, 0);
+  }
+  90% {
+    clip: rect(94px, 9999px, 9px, 0);
+  }
+  95% {
+    clip: rect(98px, 9999px, 29px, 0);
+  }
+  100% {
+    clip: rect(66px, 9999px, 41px, 0);
+  }
+}
+/* line 25, ../sass/valor.scss */
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  width: 400px;
+  left: 2px;
+  text-shadow: -1.5px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(82px, 9999px, 79px, 0);
+  }
+  5% {
+    clip: rect(47px, 9999px, 82px, 0);
+  }
+  10% {
+    clip: rect(44px, 9999px, 49px, 0);
+  }
+  15% {
+    clip: rect(39px, 9999px, 54px, 0);
+  }
+  20% {
+    clip: rect(92px, 9999px, 99px, 0);
+  }
+  25% {
+    clip: rect(54px, 9999px, 81px, 0);
+  }
+  30% {
+    clip: rect(13px, 9999px, 41px, 0);
+  }
+  35% {
+    clip: rect(23px, 9999px, 6px, 0);
+  }
+  40% {
+    clip: rect(30px, 9999px, 69px, 0);
+  }
+  45% {
+    clip: rect(61px, 9999px, 13px, 0);
+  }
+  50% {
+    clip: rect(99px, 9999px, 80px, 0);
+  }
+  55% {
+    clip: rect(69px, 9999px, 1px, 0);
+  }
+  60% {
+    clip: rect(48px, 9999px, 54px, 0);
+  }
+  65% {
+    clip: rect(88px, 9999px, 37px, 0);
+  }
+  70% {
+    clip: rect(27px, 9999px, 22px, 0);
+  }
+  75% {
+    clip: rect(45px, 9999px, 56px, 0);
+  }
+  80% {
+    clip: rect(94px, 9999px, 91px, 0);
+  }
+  85% {
+    clip: rect(38px, 9999px, 30px, 0);
+  }
+  90% {
+    clip: rect(26px, 9999px, 50px, 0);
+  }
+  95% {
+    clip: rect(10px, 9999px, 72px, 0);
+  }
+  100% {
+    clip: rect(66px, 9999px, 1px, 0);
+  }
+}
+/* line 47, ../sass/valor.scss */
+.glitch:before {
+  content: attr(data-text);
+  width: 400px;
+  position: absolute;
+  left: -2px;
+  text-shadow: 1.5px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/* line 62, ../sass/valor.scss */
+.glitch-header {
+  position: relative;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+}
+
+/* line 70, ../sass/valor.scss */
+#valor-body {
+  text-align: center;
+}
+
+/* line 73, ../sass/valor.scss */
+.main-valor-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 120px;
+}
+
+/* line 81, ../sass/valor.scss */
+#valor-body .valor-header .valor-header-title {
+  color: #957DAD;
+  font-size: 3rem;
+}
+
+/* line 85, ../sass/valor.scss */
+.home-start-button span {
+  color: white;
+  font-size: 3rem;
+}
+
+/* line 90, ../sass/valor.scss */
+.blink-me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+ .lace {
+	height: 70px;
+	background: rgba(255,255,255,0);
+	margin-bottom: 15px;
+}
+
+.six {
+	background-image: radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, #fff 6px, rgba(255,255,255,0) 7px),
+					radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, #fff 12px, rgba(255,255,255,0) 13px),
+					radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, #fff 5px, rgba(255,255,255,0) 6px),
+					radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, #fff 2px, rgba(255,255,255,0) 3px),
+					linear-gradient(to left, rgba(255,255,255,0) 1px, #fff 2px, rgba(255,255,255,0) 3px);
+	background-repeat: repeat-x;
+	background-position: 6px 35px, 6px 39px, 6px 42px, -6px 43px, 8px 45px;
+	background-size: 12px 12px, 24px 13px, 24px 12px, 24px 24px, 24px 8px;
+}
+
+.six:before {
+	content: "";
+	display: block;
+	height: 35px;
+	background-image: linear-gradient(to right bottom, rgba(255,255,255,0) 8px, #fff 9px, rgba(255,255,255,0) 10px),
+					linear-gradient(to left bottom, rgba(255,255,255,0) 8px, #fff 9px, rgba(255,255,255,0) 10px);
+	background-repeat: repeat;
+	background-size: 12px 14px, 12px 14px, 12px 11px;
+	background-position: 0 0, 0 0, 0 20px;
+}
+
+.fade-in {
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#storybox-text {
+    text-align: center;
+}
+
+#storybox-text p{
+  color: white;
+}
