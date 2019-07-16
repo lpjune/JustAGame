@@ -1,13 +1,13 @@
 /* line 5, ../sass/valor.scss */
 body {
-  background: black;
+  background-color: black !important;
   font-family: 'Varela', sans-serif;
 }
 
 /* line 10, ../sass/valor.scss */
 .glitch {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   width: 400px;
   position: relative;
   margin: 200px auto;
@@ -287,10 +287,40 @@ body {
   }
 }
 
-#storybox-text {
-    text-align: center;
+#text-box {
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 20px;
+  height: 140px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-#storybox-text p{
-  color: white;
+div#text-box p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+.option-one {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: blue;
+}
+.option-two {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: red;
 }
